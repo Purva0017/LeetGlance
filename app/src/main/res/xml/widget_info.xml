@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    widget_info.xml
+    Tells Android about our widget's size, update interval, and config activity.
+-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.example.myapplication.ui.WidgetConfigActivity"
+    android:description="@string/widget_description"
+    android:minWidth="250dp"
+    android:minHeight="110dp"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellWidth="4"
+    android:targetCellHeight="2"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen"
+    android:previewImage="@drawable/widget_preview" />
+    <!--
+        updatePeriodMillis="0" — we handle refreshes ourselves via WorkManager
+        so we don't drain battery with Android's coarse 30-min minimum timer.
+    -->

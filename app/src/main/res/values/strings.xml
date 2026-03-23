@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="widget_description">Displays your LeetCode contribution graph on your home screen.</string>
+</resources>
